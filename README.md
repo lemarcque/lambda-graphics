@@ -1,4 +1,10 @@
 # Mathemathics - [Lambda]
+
+<p align="center">
+	<img src="res/transparent.png"/>
+</p>
+
+
 Un dépot servant à modéliser à l'aide de graphiques des concepts abstrait lié au mathématique plus précisément
 des branches traitant de l'algèbre et de l'algèbre linéaire. L'utilisation de la géométrie permet de se faire
 une représentation visuel de sujet qui peuvent être difficile d'imager dans sa tête.
