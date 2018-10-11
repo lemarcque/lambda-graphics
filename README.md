@@ -60,6 +60,8 @@ Pour le moment le projet n'a pas de ligne directrice. Je n'ai pas touché au jav
 16. Fonction quadratique
 
 
-
 ### 3D
 (À réfléchir)
+
+# Algorithm
+- Tri
