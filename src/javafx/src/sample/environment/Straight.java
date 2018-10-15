@@ -1,0 +1,12 @@
+package sample.environment;
+
+import javafx.scene.shape.Line;
+
+public class Straight {
+
+    Line line;
+
+    public Straight() {
+        line = new Line(0, 0, 0, 0);
+    }
+}

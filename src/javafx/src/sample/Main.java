@@ -7,7 +7,12 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Circle;
+import javafx.scene.shape.Rectangle;
 import javafx.stage.Stage;
+import sample.environment.Environment;
+
+import static sample.environment.Environment.APP_HEIGHT;
+import static sample.environment.Environment.APP_WIDTH;
 
 /**
  * @author lemarcque
@@ -18,8 +23,7 @@ public class Main extends Application {
 
     // Variable
     private static String APP_NAME = "Lambda";
-    private static int APP_WIDTH = 700;
-    private static int APP_HEIGHT = 500;
+
 
     @Override
     public void start(Stage primaryStage) throws Exception {
@@ -33,12 +37,14 @@ public class Main extends Application {
         primaryStage.show();
 
         // adding objects to the root group
-        root.getChildren().add(getCircle());
+        //root.getChildren().add(getCircle());
+        //root.getChildren().add(getRect());
+        new Environment(root).build();
     }
 
     /**
      * Creation of an circle graphics object
-     * @return an Circle object
+     * @return an JavaFX Circle object
      */
     private Circle getCircle() {
         Circle circle = new Circle();
@@ -47,6 +53,20 @@ public class Main extends Application {
         circle.setCenterY(200);
         circle.setFill(Color.BEIGE);
         return circle;
+    }
+
+    /**
+     * Create a new rectangle graphics object
+     * @return an JavaFX Rectangle object
+     */
+    private Rectangle getRect() {
+        Rectangle rectangle = new Rectangle();
+        rectangle.setWidth(50);
+        rectangle.setHeight(50);
+        rectangle.setFill(Color.BEIGE);
+        rectangle.setX(400);
+        rectangle.setY(200);
+        return rectangle;
     }
 
 
