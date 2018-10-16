@@ -1,19 +1,32 @@
 package sample.environment.base;
 
-import sample.environment.Dimension;
-import sample.environment.Straight;
+import sample.environment.euclide.Point;
 
-public interface Space {
+import java.util.ArrayList;
+import java.util.List;
+
+public abstract class Space {
+
+    protected List<Point> pointList;
+
+    public Space() {
+        pointList = new ArrayList<>();
+    }
+
+    /**
+     * Build the space
+     */
+    public abstract void build(Environment environment);
 
     /**
      * Draw the plan with a background color
      */
-    void drawPlan();
+    protected abstract void drawPlan();
 
 
     /**
      * Draw axis with color and graduation settled
      */
-    void drawAxis();
+    protected abstract void drawAxis();
 
 }

@@ -1,21 +1,23 @@
 package sample.environment.vector;
 
-import sample.environment.Dimension;
+import sample.environment.base.Environment;
 import sample.environment.base.Space;
 
-public class VectorSpace implements Space {
+public class VectorSpace extends Space {
 
-    public VectorSpace(Dimension dimension) {
+
+    @Override
+    public void build(Environment environment) {
 
     }
 
     @Override
-    public void drawPlan() {
+    protected void drawPlan() {
 
     }
 
     @Override
-    public void drawAxis() {
+    protected void drawAxis() {
 
     }
 }

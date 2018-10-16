@@ -1,4 +1,4 @@
-package sample.environment;
+package sample.environment.base;
 
 /**
  * Define the dimension of the

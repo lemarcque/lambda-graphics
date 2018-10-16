@@ -1,18 +1,15 @@
 package sample;
 
 import javafx.application.Application;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Group;
-import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Circle;
 import javafx.scene.shape.Rectangle;
 import javafx.stage.Stage;
-import sample.environment.Environment;
+import sample.environment.base.Environment;
 
-import static sample.environment.Environment.APP_HEIGHT;
-import static sample.environment.Environment.APP_WIDTH;
+import static sample.environment.base.Environment.APP_HEIGHT;
+import static sample.environment.base.Environment.APP_WIDTH;
 
 /**
  * @author lemarcque
@@ -28,18 +25,14 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception {
         // Creation of the group
-        Group root = new Group();
 
         // Creation and affectation of the Scene
-        Scene scene = new Scene(root, APP_WIDTH, APP_HEIGHT);
+        Scene scene = new Scene(Environment.getRoot(), APP_WIDTH, APP_HEIGHT);
         primaryStage.setTitle(APP_NAME);
         primaryStage.setScene(scene);
         primaryStage.show();
 
-        // adding objects to the root group
-        //root.getChildren().add(getCircle());
-        //root.getChildren().add(getRect());
-        new Environment(root).build();
+        new Environment();
     }
 
     /**

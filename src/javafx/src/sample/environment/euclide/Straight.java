@@ -1,4 +1,4 @@
-package sample.environment;
+package sample.environment.euclide;
 
 import javafx.scene.shape.Line;
 
