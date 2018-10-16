@@ -7,7 +7,6 @@ import javafx.scene.shape.Line;
 import javafx.scene.shape.Rectangle;
 import sample.environment.base.Dimension;
 import sample.environment.base.Environment;
-import sample.environment.base.Object;
 import sample.environment.base.Space;
 
 public class EuclideanSpace extends Space {
@@ -24,7 +23,7 @@ public class EuclideanSpace extends Space {
 
     public EuclideanSpace(Dimension dimension) {
         this.dimension = dimension;
-        scale = 10;
+        scale = 50;
     }
 
     /**
@@ -51,24 +50,50 @@ public class EuclideanSpace extends Space {
      * Draw axis with color and graduation settled
      */
     public void drawAxis() {
+
+        Group groupAxis = new Group();
+
+        // Position of axis
+        int startYOfXAxis = Environment.APP_HEIGHT / 2;
+        int startXOfYAxis = Environment.APP_WIDTH / 2;
+
         // X-Axis
         final Line lineX = new Line();
         lineX.setStartX(0);
         lineX.setEndX(Environment.APP_WIDTH);
-        lineX.setStartY(Environment.APP_HEIGHT / 2);
-        lineX.setEndY(Environment.APP_HEIGHT / 2);
+        lineX.setStartY(startYOfXAxis);
+        lineX.setEndY(startYOfXAxis);
         lineX.setStroke(Color.WHITE);
 
         // Y-Axis
         final Line lineY = new Line();
-        lineY.setStartX(Environment.APP_WIDTH / 2);
-        lineY.setEndX(Environment.APP_WIDTH / 2);
+        lineY.setStartX(startXOfYAxis);
+        lineY.setEndX(startXOfYAxis);
         lineY.setStartY(0);
         lineY.setEndY(Environment.APP_HEIGHT);
         lineY.setStroke(Color.WHITE);
 
+        int graduationSize = 10;
+
+        // graduation for X-AXis
+        for(int i = 1; i < (Environment.APP_WIDTH / scale) + 1; i++) {
+            int startXGraduation = i * scale;
+            int startYGraduation = startYOfXAxis - (graduationSize /2);
+            Line l = new Line(startXGraduation, startYGraduation, startXGraduation,startYGraduation + graduationSize);
+            l.setStroke(Color.WHITE);
+            groupAxis.getChildren().add(l);
+        }
+
+        // graduation for Y-AXis
+        for(int i = 1; i < (Environment.APP_HEIGHT / scale) + 1; i++) {
+            int startXGraduation = startXOfYAxis - (graduationSize / 2);
+            int startYGraduation = i * scale;
+            Line l = new Line(startXGraduation, startYGraduation, startXGraduation + graduationSize, startYGraduation);
+            l.setStroke(Color.WHITE);
+            groupAxis.getChildren().add(l);
+        }
+
         // Adding to the group root
-        Group groupAxis = new Group();
         groupAxis.getChildren().add(lineX);
         groupAxis.getChildren().add(lineY);
         virtualSpace.getChildren().add(groupAxis);
@@ -95,14 +120,15 @@ public class EuclideanSpace extends Space {
 
         pointList.add(point);
 
-        // Creation of a circle
-        Circle circle = new Circle(2);
+
 
         // calcul of the position
         int originStartX = Environment.APP_WIDTH / 2;
         int originStartY = Environment.APP_HEIGHT / 2;
         int direction = -1;
 
+        // Creation of a circle
+        Circle circle = new Circle(2);
         circle.setCenterX(originStartX + (point.getPosX() * scale));
         circle.setCenterY(originStartY + (point.getPosY() * scale) * direction);
         circle.setFill(Color.YELLOW);
