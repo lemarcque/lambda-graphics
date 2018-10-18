@@ -36,7 +36,7 @@ Pour le moment le projet n'a pas de ligne directrice. Je n'ai pas touché au jav
 
 - [x] Créer un object canvas (fond noir)
 - [x] Créer un système de coordonées cartésien avec des lignes blanches
-- [-] Ajouter des graduations aux axes des abscisses et des ordonnées
+- [ ] Ajouter des graduations aux axes des abscisses et des ordonnées
 - [ ] Ajouter une fonctionnalité permettant de réduire ou d'agrandir (zommer) l'axe en fonction de l'unité des graduations
 
 (Uniquement programmatiquement)
