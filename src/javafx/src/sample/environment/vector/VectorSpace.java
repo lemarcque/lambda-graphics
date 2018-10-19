@@ -1,7 +1,7 @@
 package sample.environment.vector;
 
-import sample.environment.base.Environment;
-import sample.environment.base.Space;
+import sample.environment.geometry.Environment;
+import sample.environment.geometry.Space;
 
 public class VectorSpace extends Space {
 

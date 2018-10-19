@@ -1,6 +1,6 @@
-package sample.environment.base;
+package sample.environment.geometry;
 
-import sample.environment.euclide.Point;
+import sample.environment.geometry.euclide.Point;
 
 import java.util.ArrayList;
 import java.util.List;

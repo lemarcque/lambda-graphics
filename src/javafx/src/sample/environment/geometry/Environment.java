@@ -1,11 +1,10 @@
-package sample.environment.base;
+package sample.environment.geometry;
 
 import javafx.scene.Group;
-import javafx.scene.Node;
-import sample.environment.euclide.EuclideanSpace;
-import sample.environment.euclide.Point;
+import sample.environment.geometry.euclide.CartesianCoordinate;
+import sample.environment.geometry.euclide.EuclideanSpace;
+import sample.environment.geometry.euclide.Point;
 
-import java.awt.*;
 
 /**
  * Representation physic
@@ -24,17 +23,22 @@ public class Environment {
         euclideanSpace.setGraduationVisibility(true);
 
         // Adding a point
-        Point p1 = new Point(18, 20);
+        Point p1 = new Point(15, 45);
         Point p2 = new Point(4, -3);
         Point p3 = new Point(-10, 7);
         Point p4 = new Point(-3, 5);
         Point p5 = new Point(13, 20);
 
-        euclideanSpace.addPoint(p1);
+        /*euclideanSpace.addPoint(p1);
         euclideanSpace.addPoint(p2);
         euclideanSpace.addPoint(p3);
         euclideanSpace.addPoint(p4);
-        euclideanSpace.addPoint(p5);
+        euclideanSpace.addPoint(p5);*/
+
+        // Adding line
+        Point p6 = new Point(1, -3);
+        Point p7 = new Point(3, 7);
+        euclideanSpace.addLine(p6, p7);
     }
 
     public static Group getRoot() {

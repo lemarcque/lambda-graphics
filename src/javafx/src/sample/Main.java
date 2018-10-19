@@ -6,10 +6,10 @@ import javafx.scene.paint.Color;
 import javafx.scene.shape.Circle;
 import javafx.scene.shape.Rectangle;
 import javafx.stage.Stage;
-import sample.environment.base.Environment;
+import sample.environment.geometry.Environment;
 
-import static sample.environment.base.Environment.APP_HEIGHT;
-import static sample.environment.base.Environment.APP_WIDTH;
+import static sample.environment.geometry.Environment.APP_HEIGHT;
+import static sample.environment.geometry.Environment.APP_WIDTH;
 
 /**
  * @author lemarcque

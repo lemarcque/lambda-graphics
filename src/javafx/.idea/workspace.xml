@@ -2,12 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/src/sample/environment/base/Function.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sample/environment/geometry/function/AffineFunction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sample/environment/geometry/function/FunctionSpace.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javafx/sample/environment/base/Environment.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/javafx/sample/environment/base/Environment.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javafx/sample/environment/base/Object.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javafx/sample/environment/euclide/EuclideanSpace.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/javafx/sample/environment/euclide/EuclideanSpace.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/environment/base/Object.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/environment/euclide/EuclideanSpace.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/environment/euclide/EuclideanSpace.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/javafx/sample/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/javafx/sample/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/javafx/sample/environment/base/Dimension.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/javafx/sample/environment/base/Environment.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/javafx/sample/environment/base/Space.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/javafx/sample/environment/euclide/CartesianCoordinate.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/javafx/sample/environment/euclide/EuclideanSpace.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/javafx/sample/environment/euclide/Lines.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/javafx/sample/environment/euclide/Point.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/javafx/sample/environment/euclide/Segment.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/javafx/sample/environment/euclide/Straight.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/javafx/sample/environment/vector/VectorSpace.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/javafx/sample/environment/vector/VectorSpace.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/environment/base/Dimension.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/environment/geometry/Dimension.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/environment/base/Environment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/environment/geometry/Environment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/environment/base/Space.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/environment/geometry/Space.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/environment/euclide/CartesianCoordinate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/environment/geometry/euclide/CartesianCoordinate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/environment/euclide/EuclideanSpace.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/environment/geometry/euclide/EuclideanSpace.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/environment/euclide/Lines.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/environment/geometry/euclide/Lines.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/environment/euclide/Point.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/environment/geometry/euclide/Point.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/environment/euclide/Segment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/environment/geometry/euclide/Segment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/environment/euclide/Straight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/environment/geometry/euclide/AxisLine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/environment/vector/VectorSpace.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/environment/vector/VectorSpace.java" afterDir="false" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -19,7 +39,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/javafx$Main.ic" NAME="Main Coverage Results" MODIFIED="1539624424657" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/javafx$Main.ic" NAME="Main Coverage Results" MODIFIED="1539788051661" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>sample.*</FILTER>
     </SUITE>
   </component>
@@ -68,33 +88,36 @@
     <session id="-44223240">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="3" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.3" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.open.time.7" value="1" />
+          <entry key="project.open.time.8" value="2" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="28" />
-          <entry key="java" value="3855" />
+          <entry key="java" value="7307" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="3855" />
+          <entry key="JAVA" value="7307" />
           <entry key="PLAIN_TEXT" value="28" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="1" />
-          <entry key="java" value="14" />
+          <entry key="java" value="30" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="1" />
-          <entry key="JAVA" value="14" />
+          <entry key="JAVA" value="30" />
         </counts>
       </usages-collector>
     </session>
@@ -137,45 +160,77 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
+        <entry file="file://$PROJECT_DIR$/src/sample/environment/geometry/Environment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="33" selection-start-line="33" selection-end-line="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/environment/base/Environment.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-5">
-              <caret line="9" column="3" lean-forward="true" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
+            <state relative-caret-position="65">
+              <caret line="35" column="38" selection-start-line="35" selection-start-column="38" selection-end-line="35" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1098#1099#0" expanded="true" />
-                <element signature="e#1143#1144#0" expanded="true" />
+                <element signature="e#1279#1280#0" expanded="true" />
+                <element signature="e#1306#1307#0" expanded="true" />
+                <element signature="e#1429#1430#0" expanded="true" />
+                <element signature="e#1474#1475#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/sample/environment/euclide/EuclideanSpace.java">
+        <entry file="file://$PROJECT_DIR$/src/sample/environment/geometry/euclide/EuclideanSpace.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="86" column="24" selection-start-line="86" selection-start-column="24" selection-end-line="86" selection-end-column="24" />
+            <state relative-caret-position="245">
+              <caret line="159" lean-forward="true" selection-start-line="159" selection-end-line="159" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="docComment;method#build#0;class#EuclideanSpace#0" />
-                <element signature="method#build#0;class#SpaceImpl#0" />
                 <element signature="docComment;method#drawPlan#0;class#EuclideanSpace#0" />
-                <element signature="method#drawPlan#0;class#SpaceImpl#0" />
-                <element signature="docComment;method#drawAxis#0;class#SpaceImpl#0" />
                 <element signature="docComment;method#setGraduationVisibility#0;class#EuclideanSpace#0" />
                 <element signature="method#setGraduationVisibility#0;class#EuclideanSpace#0" />
-                <element signature="docComment;method#add#0;class#SpaceImpl#0" />
-                <element signature="method#addPoint#0;class#EuclideanSpace#0" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sample/environment/geometry/euclide/AxisLine.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="31" />
+              <folding>
+                <element signature="e#271#272#0" expanded="true" />
+                <element signature="e#301#302#0" expanded="true" />
+                <element signature="e#274#275#0" expanded="true" />
+                <element signature="e#312#313#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sample/environment/geometry/function/AffineFunction.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="334">
+              <caret line="78" column="17" selection-start-line="78" selection-start-column="17" selection-end-line="78" selection-end-column="17" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="docComment;method#create#0;class#AffineFunction#0" />
+                <element signature="e#971#972#0" expanded="true" />
+                <element signature="e#1018#1019#0" expanded="true" />
+                <element signature="docComment;method#calculateSlope#0;class#AffineFunction#0" />
+                <element signature="e#1397#1398#0" expanded="true" />
+                <element signature="e#1430#1431#0" expanded="true" />
+                <element signature="e#1462#1463#0" expanded="true" />
+                <element signature="e#1520#1521#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sample/environment/base/Function.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="16" selection-start-line="16" selection-end-line="16" />
             </state>
           </provider>
         </entry>
@@ -188,6 +243,13 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>ad</find>
+      <find>Straigh</find>
+      <find>axisX</find>
+    </findStrings>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -219,7 +281,17 @@
         <option value="$PROJECT_DIR$/src/sample/environment/base/Space.java" />
         <option value="$PROJECT_DIR$/src/sample/environment/vector/VectorSpace.java" />
         <option value="$PROJECT_DIR$/src/sample/environment/base/Environment.java" />
+        <option value="$PROJECT_DIR$/src/sample/environment/euclide/Straight.java" />
+        <option value="$PROJECT_DIR$/src/sample/environment/euclide/AxisLine.java" />
         <option value="$PROJECT_DIR$/src/sample/environment/euclide/EuclideanSpace.java" />
+        <option value="$PROJECT_DIR$/src/sample/environment/geometry/Space.java" />
+        <option value="$PROJECT_DIR$/src/sample/environment/geometry/function/FunctionSpace.java" />
+        <option value="$PROJECT_DIR$/src/sample/environment/geometry/euclide/CartesianCoordinate.java" />
+        <option value="$PROJECT_DIR$/src/sample/environment/geometry/Environment.java" />
+        <option value="$PROJECT_DIR$/src/sample/environment/base/Function.java" />
+        <option value="$PROJECT_DIR$/src/sample/environment/geometry/function/AffineFunction.java" />
+        <option value="$PROJECT_DIR$/src/sample/environment/geometry/euclide/AxisLine.java" />
+        <option value="$PROJECT_DIR$/src/sample/environment/geometry/euclide/EuclideanSpace.java" />
       </list>
     </option>
   </component>
@@ -243,8 +315,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -284,12 +354,32 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="sample" type="462c0819:PsiDirectoryNode" />
               <item name="environment" type="462c0819:PsiDirectoryNode" />
+              <item name="geometry" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="javafx" type="b2602c69:ProjectViewProjectNode" />
+              <item name="javafx" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="sample" type="462c0819:PsiDirectoryNode" />
+              <item name="environment" type="462c0819:PsiDirectoryNode" />
+              <item name="geometry" type="462c0819:PsiDirectoryNode" />
               <item name="euclide" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="javafx" type="b2602c69:ProjectViewProjectNode" />
+              <item name="javafx" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="sample" type="462c0819:PsiDirectoryNode" />
+              <item name="environment" type="462c0819:PsiDirectoryNode" />
+              <item name="geometry" type="462c0819:PsiDirectoryNode" />
+              <item name="function" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -406,15 +496,15 @@
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.26323318" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.2739628" />
       <window_info id="Structure" order="1" weight="0.24964234" />
-      <window_info id="Favorites" order="2" />
+      <window_info id="Favorites" order="2" weight="0.3297568" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.35767326" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39975247" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -434,7 +524,7 @@
       <window_info anchor="right" id="Palette" order="5" />
       <window_info anchor="right" id="Maven Projects" order="6" sideWeight="0.4990758" weight="0.3297568" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Coverage" order="8" sideWeight="0.5009242" side_tool="true" weight="0.24964234" />
+      <window_info active="true" anchor="right" id="Coverage" order="8" sideWeight="0.5009242" side_tool="true" visible="true" weight="0.24964234" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -471,29 +561,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/environment/euclide/Segment.java">
+    <entry file="file://$PROJECT_DIR$/src/sample/environment/geometry/euclide/Segment.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/environment/euclide/Lines.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/environment/euclide/EuclideanSpace.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="38" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#326#327#0" expanded="true" />
-            <element signature="e#360#361#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -504,46 +575,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/environment/Type.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/environment/euclide/Straight.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/environment/base/Dimension.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/environment/base/Space.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="94">
-          <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#214#215#0" expanded="true" />
-            <element signature="e#258#259#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/environment/euclide/CartesianCoordinate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="35" lean-forward="true" selection-start-column="35" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/environment/Type.java" />
     <entry file="file://$PROJECT_DIR$/src/sample/environment/vector/VectorSpace.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -554,6 +586,7 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/environment/base/Object.java" />
     <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
@@ -561,61 +594,139 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/environment/euclide/Point.java">
+    <entry file="file://$PROJECT_DIR$/src/sample/environment/geometry/euclide/Lines.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="24" column="20" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
-          <folding>
-            <element signature="e#141#142#0" expanded="true" />
-            <element signature="e#194#195#0" expanded="true" />
-            <element signature="e#261#262#0" expanded="true" />
-            <element signature="e#304#305#0" expanded="true" />
-            <element signature="e#389#390#0" expanded="true" />
-            <element signature="e#424#425#0" expanded="true" />
-            <element signature="e#456#457#0" expanded="true" />
-            <element signature="e#481#482#0" expanded="true" />
-            <element signature="e#547#548#0" expanded="true" />
-            <element signature="e#574#575#0" expanded="true" />
-            <element signature="e#552#553#0" expanded="true" />
-            <element signature="e#581#582#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="30">
+          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/environment/base/Object.java">
+    <entry file="file://$PROJECT_DIR$/src/sample/environment/geometry.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        <state relative-caret-position="30">
+          <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/environment/base/Environment.java">
+    <entry file="file://$PROJECT_DIR$/src/sample/environment/geometry/Dimension.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5">
-          <caret line="9" column="3" lean-forward="true" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
+        <state relative-caret-position="75">
+          <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/environment/geometry/Space.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="18" lean-forward="true" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1098#1099#0" expanded="true" />
-            <element signature="e#1143#1144#0" expanded="true" />
+            <element signature="e#220#221#0" expanded="true" />
+            <element signature="e#265#266#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/environment/euclide/EuclideanSpace.java">
+    <entry file="file://$PROJECT_DIR$/src/sample/environment/geometry/function/FunctionSpace.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="86" column="24" selection-start-line="86" selection-start-column="24" selection-end-line="86" selection-end-column="24" />
+        <state relative-caret-position="195">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Home/src.zip!/java/io/PrintStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="595" column="16" selection-start-line="595" selection-start-column="16" selection-end-line="595" selection-end-column="16" />
+          <folding>
+            <element signature="e#20831#20832#0" expanded="true" />
+            <element signature="e#20871#20872#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/environment/geometry/euclide/CartesianCoordinate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/environment/geometry/euclide/Point.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="16" column="28" lean-forward="true" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
+          <folding>
+            <element signature="e#423#424#0" expanded="true" />
+            <element signature="e#458#459#0" expanded="true" />
+            <element signature="e#486#487#0" expanded="true" />
+            <element signature="e#521#522#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/environment/base/Function.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/environment/geometry/Environment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="65">
+          <caret line="35" column="38" selection-start-line="35" selection-start-column="38" selection-end-line="35" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1279#1280#0" expanded="true" />
+            <element signature="e#1306#1307#0" expanded="true" />
+            <element signature="e#1429#1430#0" expanded="true" />
+            <element signature="e#1474#1475#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/environment/geometry/function/AffineFunction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="334">
+          <caret line="78" column="17" selection-start-line="78" selection-start-column="17" selection-end-line="78" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;method#create#0;class#AffineFunction#0" />
+            <element signature="e#971#972#0" expanded="true" />
+            <element signature="e#1018#1019#0" expanded="true" />
+            <element signature="docComment;method#calculateSlope#0;class#AffineFunction#0" />
+            <element signature="e#1397#1398#0" expanded="true" />
+            <element signature="e#1430#1431#0" expanded="true" />
+            <element signature="e#1462#1463#0" expanded="true" />
+            <element signature="e#1520#1521#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/environment/geometry/euclide/AxisLine.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="31" />
+          <folding>
+            <element signature="e#271#272#0" expanded="true" />
+            <element signature="e#301#302#0" expanded="true" />
+            <element signature="e#274#275#0" expanded="true" />
+            <element signature="e#312#313#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/environment/geometry/euclide/EuclideanSpace.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="159" lean-forward="true" selection-start-line="159" selection-end-line="159" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="docComment;method#build#0;class#EuclideanSpace#0" />
-            <element signature="method#build#0;class#SpaceImpl#0" />
             <element signature="docComment;method#drawPlan#0;class#EuclideanSpace#0" />
-            <element signature="method#drawPlan#0;class#SpaceImpl#0" />
-            <element signature="docComment;method#drawAxis#0;class#SpaceImpl#0" />
             <element signature="docComment;method#setGraduationVisibility#0;class#EuclideanSpace#0" />
             <element signature="method#setGraduationVisibility#0;class#EuclideanSpace#0" />
-            <element signature="docComment;method#add#0;class#SpaceImpl#0" />
-            <element signature="method#addPoint#0;class#EuclideanSpace#0" />
           </folding>
         </state>
       </provider>

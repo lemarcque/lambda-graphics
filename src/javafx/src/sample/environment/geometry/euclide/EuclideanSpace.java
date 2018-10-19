@@ -1,21 +1,23 @@
-package sample.environment.euclide;
+package sample.environment.geometry.euclide;
 
 import javafx.scene.Group;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Circle;
 import javafx.scene.shape.Line;
 import javafx.scene.shape.Rectangle;
-import sample.environment.base.Dimension;
-import sample.environment.base.Environment;
-import sample.environment.base.Space;
+import sample.environment.base.Function;
+import sample.environment.geometry.Dimension;
+import sample.environment.geometry.Environment;
+import sample.environment.geometry.Space;
+import sample.environment.geometry.function.AffineFunction;
 
 public class EuclideanSpace extends Space {
 
 
     private Environment environment;        // The graphical environment (framework)
     private Dimension dimension;          // Dimension of the space
-    private Straight axisX;                 // The horizontal axe : The abscissa
-    private Straight axisY;                 // The vertical axe : The y-axis
+    private AxisLine axisX;                 // The horizontal axe : The abscissa
+    private AxisLine axisY;                 // The vertical axe : The y-axis
     private Group virtualSpace;
 
     private boolean graduationVisibility;             // visibility of the graduation
@@ -23,7 +25,7 @@ public class EuclideanSpace extends Space {
 
     public EuclideanSpace(Dimension dimension) {
         this.dimension = dimension;
-        scale = 50;
+        scale = 25;
     }
 
     /**
@@ -53,6 +55,10 @@ public class EuclideanSpace extends Space {
 
         Group groupAxis = new Group();
 
+        axisX = new AxisLine();
+        axisY = new AxisLine();
+
+
         // Position of axis
         int startYOfXAxis = Environment.APP_HEIGHT / 2;
         int startXOfYAxis = Environment.APP_WIDTH / 2;
@@ -76,7 +82,8 @@ public class EuclideanSpace extends Space {
         int graduationSize = 10;
 
         // graduation for X-AXis
-        for(int i = 1; i < (Environment.APP_WIDTH / scale) + 1; i++) {
+        axisX.setGraduationCount(Environment.APP_HEIGHT / scale);
+        for(int i = 1; i < axisX.getGraduationCount() + 1; i++) {
             int startXGraduation = i * scale;
             int startYGraduation = startYOfXAxis - (graduationSize /2);
             Line l = new Line(startXGraduation, startYGraduation, startXGraduation,startYGraduation + graduationSize);
@@ -85,7 +92,8 @@ public class EuclideanSpace extends Space {
         }
 
         // graduation for Y-AXis
-        for(int i = 1; i < (Environment.APP_HEIGHT / scale) + 1; i++) {
+        axisY.setGraduationCount(Environment.APP_HEIGHT / scale);
+        for(int i = 1; i < axisY.getGraduationCount() + 1; i++) {
             int startXGraduation = startXOfYAxis - (graduationSize / 2);
             int startYGraduation = i * scale;
             Line l = new Line(startXGraduation, startYGraduation, startXGraduation + graduationSize, startYGraduation);
@@ -121,7 +129,6 @@ public class EuclideanSpace extends Space {
         pointList.add(point);
 
 
-
         // calcul of the position
         int originStartX = Environment.APP_WIDTH / 2;
         int originStartY = Environment.APP_HEIGHT / 2;
@@ -133,5 +140,33 @@ public class EuclideanSpace extends Space {
         circle.setCenterY(originStartY + (point.getPosY() * scale) * direction);
         circle.setFill(Color.YELLOW);
         virtualSpace.getChildren().add(circle);
+    }
+
+    /**
+     * Draw a new line on the space
+     * - get the function of the representative lines according the coordinates c1 and c2
+     * - draw the lines by adding a set of points that will make the line
+     * @param p1 The first point with their coordinate of the first point
+     * @param p2 The second point coordinate of the second point
+     */
+    public void addLine(Point p1, Point p2) {
+
+        // test color
+        this.addPoint(p1);
+        this.addPoint(p2);
+
+        // calculate the function of the line
+        Function f = AffineFunction.create(p1, p2);
+
+        // Display some values of the function "f"
+        for(int i = p1.getPosX(); i < p2.getPosY(); i++) {
+            System.out.println("x: " + i + " => y: " + f.getImage(i));
+
+            // Draw the point that compose the line
+            // tod ..
+
+            // Draw the point that compose the segment
+            // todo .. addPoint(new Point(i, (int) f.getImage(i)));
+        }
     }
 }

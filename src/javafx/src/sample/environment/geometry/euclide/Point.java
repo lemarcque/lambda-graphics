@@ -1,4 +1,4 @@
-package sample.environment.euclide;
+package sample.environment.geometry.euclide;
 
 public class Point {
 
