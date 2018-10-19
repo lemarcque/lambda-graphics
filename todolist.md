@@ -1,10 +1,13 @@
 # Todo
-
 La première chose à faire est de me familiariser avec la bibliothètque JavaFX pour dessiner des objets graphiques simple (point, droite)
 à l'écran.
 Puis de développer une bibliothèque comprenant des "objets mathématiques fondamentaux issue de la géométrique euclidienne
 (espace gémotrique, plan, point, droite, segment) sur lesquelles je vais ensuite pouvoir réutiliser comme base pour créer d'autre
 objet mathématiques (espaces vectiorelles, droite et courbe représentative de  fonctions, etc.) sur les quelles j'effectuerai des manipulations.
+
+## Liste
+Cet liste est une liste de tâche non exhaustive que je dois faire en travaillant sur ce projet. 
+
 
 ### Géométrie (euclidienne)
 
