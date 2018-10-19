@@ -1,7 +1,7 @@
 # [Lambda]
 
 <p align="center">
-	<img src="res/transparent.png width="140" height="140"/>
+	<img src="res/transparent.png" width="90" height="141"/>
 </p>
 
 
