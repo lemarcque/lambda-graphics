@@ -8,18 +8,22 @@ objet mathématiques (espaces vectiorelles, droite et courbe représentative de 
 ## Liste
 Cet liste est une liste de tâche non exhaustive que je dois faire en travaillant sur ce projet. 
 
+Légendes :
+- ~ signifie partiellement
+- x signifie effectué complètement
+- " " signifie rien effectué
 
 ### Géométrie (euclidienne)
 
 - [x] Créer un object canvas (fond noir)
 - [x] Créer un système de coordonées cartésien avec des lignes blanches
-- [ ] Ajouter des graduations aux axes des abscisses et des ordonnées
-- [ ] Ajouter une fonctionnalité permettant de réduire ou d'agrandir (zommer) l'axe en fonction de l'unité des graduations
+- [ ] Ajouter des graduations au axes des abscisses et des ordonnées
+- [~] Ajouter une fonctionnalité permettant de réduire ou d'agrandir (zommer) l'axe en fonction de l'unité des graduations
 
 (Uniquement programmatiquement)
 
-5. Ajouter des points à partir de leur coordonnées
-6. Modifier la position des points par leur coordonées
+- [x] 5. Ajouter des points à partir de leur coordonnées
+- [x] 6. Modifier la position des points par leur coordonées
 7. Créer des figures géométrique simple - polygone (carrées, rectangle, losange , etc.)
 7. Afficher des informations concernant une figure en cliquant dessus
 7. Afficher des informations concernant une figure dirèctement à coté de celui-ci dans le graphique
