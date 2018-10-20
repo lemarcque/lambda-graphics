@@ -41,8 +41,16 @@ Légendes :
 
 
 ### Fonction
-14. Fonction linéaire
-15. Fonction affine
-16. Fonction quadratique
+Fonction1
+linéaire
+- [ ] Fonction linéaire
+- [~] Fonction affine
+- [ ] Fonction quadratique
+- [ ] Fonction logistique
+
+### (Loi de l'offre et de la demande)
+Visualisation des positions des courbes par rapport à une situation économique.
 
 ### Trigonométrie
+
+### ML
