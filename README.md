@@ -1,4 +1,4 @@
-# [Lambda]
+# Lambda _Graphics_
 
 <p align="center">
 	<img src="res/transparent.png" width="90" height="141"/>
