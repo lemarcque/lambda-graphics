@@ -29,16 +29,29 @@ public class Environment {
         Point p4 = new Point(-3, 5);
         Point p5 = new Point(13, 20);
 
-        /*euclideanSpace.addPoint(p1);
+        euclideanSpace.addPoint(p1);
         euclideanSpace.addPoint(p2);
         euclideanSpace.addPoint(p3);
         euclideanSpace.addPoint(p4);
-        euclideanSpace.addPoint(p5);*/
+        euclideanSpace.addPoint(p5);
 
         // Adding line
-        Point p6 = new Point(1, -3);
-        Point p7 = new Point(3, 7);
+        // Affine line
+        Point p6 = new Point(-150, 20);
+        Point p7 = new Point(250, -60);
         euclideanSpace.addLine(p6, p7);
+
+        // vertical line
+        Point p8 = new Point(-150, 60);
+        Point p9 = new Point(-150, 90);
+        euclideanSpace.addLine(p8, p9);
+
+        // horizontal line
+        Point p10 = new Point(-160, 100);
+        Point p11 = new Point(-75, 100);
+        euclideanSpace.addLine(p10, p11);
+
+       // euclideanSpace.testLine();
     }
 
     public static Group getRoot() {

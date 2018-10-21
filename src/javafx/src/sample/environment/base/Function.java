@@ -13,6 +13,6 @@ import sample.environment.geometry.euclide.Point;
  */
 public abstract class Function {
 
-    public abstract float getImage(float fiber);
+    public abstract double getImage(double fiber);
 
 }

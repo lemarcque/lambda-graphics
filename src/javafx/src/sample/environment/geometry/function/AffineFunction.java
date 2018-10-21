@@ -5,10 +5,10 @@ import sample.environment.geometry.euclide.Point;
 
 public class AffineFunction extends Function {
 
-    private final float m;         // the slope
-    private final float b;         // y-intercept or vertical-intercept
+    private final double m;         // the slope
+    private final double b;         // y-intercept or vertical-intercept
 
-    AffineFunction(float slope, float intercept) {
+    AffineFunction(double slope, double intercept) {
         m = slope;
         b = intercept;
     }
@@ -21,8 +21,8 @@ public class AffineFunction extends Function {
      */
     public static Function create(Point p1, Point p2) {
         float x = 1;                        // by default set to 1
-        float m = calculateSlope(p1, p2);
-        float b = p1.getPosY() - (m * p1.getPosX());                         // b = y - mx
+        double m = calculateSlope(p1, p2);
+        double b = p1.getPosY() - (m * p1.getPosX());                         // b = y - mx
         return new AffineFunction(m , b);
     }
 
@@ -45,8 +45,16 @@ public class AffineFunction extends Function {
      *
      * @return the slope of the lines of the function
      */
-    public static float calculateSlope(Point p1, Point p2) {
-        return (p2.getPosY() - p1.getPosY()) / (p2.getPosX() - p1.getPosX());
+    public static double calculateSlope(Point p1, Point p2) {
+        System.out.println();
+
+
+
+        return ((double) p2.getPosY() - p1.getPosY()) / (double) (p2.getPosX() - p1.getPosX());
+    }
+
+    public double getSlope() {
+        return m;
     }
 
 
@@ -54,11 +62,11 @@ public class AffineFunction extends Function {
 
     /**
      * Return the image (x) of the fiber (y) given
-     * @param fiber a float value
-     * @return a float value
+     * @param fiber a double value
+     * @return a double value
      */
     @Override
-    public float getImage(float fiber) {
+    public double getImage(double fiber) {
         return calculate(fiber);
     }
 
@@ -67,7 +75,7 @@ public class AffineFunction extends Function {
      * @param x a int value
      * @return
      */
-    private float calculate(float x) {
+    private double calculate(double x) {
         return (m * x)  + b;   // f(x) = mx + b
     }
 
