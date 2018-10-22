@@ -24,4 +24,4 @@ Ce projet me servira également de noyau pour d'autre projet personneles liés a
 Les style d'animation, les couleurs et les polices sont inspirés des vidéos du mathématicien 3blue1brown (__Grand Sanderson__)
 
 ## Todo-list
-Voir le plan via ce [lien](https://github.com/lemarcque/lambda/blob/master/todolist.md)
+Voir le plan via ce [lien](https://github.com/lemarcque/mathgraph/blob/master/todolist.md)
