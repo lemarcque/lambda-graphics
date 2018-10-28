@@ -1,6 +1,6 @@
 # Mathgraph
 <p align="center">
-	<img src="res/sample.gif" width="500" height="300"/>
+	<img src="res/screenshot.png" width="650"/>
 </p>
 
 Une bibliothèque servant à modéliser visuellement à l'aide de représentation graphiques de fonction mathématique principalement mais également d'autre objet mathématique tel que des figures géométrique, vecteurs jusqu'en 3 dimensions.
